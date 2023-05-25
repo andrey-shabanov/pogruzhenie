@@ -12,12 +12,12 @@ if (isNotLoggedIn()){
     exit();
 }
 
-//if (!isAdmin()){
-//    if (!isAuthor($user_id, $editUserId)){
-//        redirectTo('users.php');
-//        setFlashMessage('danger', 'Вы можете редактировать только свой профиль!');
-//    }
-//}
+if (!isAdmin()){
+    if (!isAuthor($user_id, $editUserId)){
+        redirectTo('users.php');
+        setFlashMessage('danger', 'Вы можете редактировать только свой профиль!');
+    }
+}
 
 $user = getUserById($editUserId);
 $email = $user['email'];
