@@ -115,7 +115,7 @@ $id = $_SESSION['user']['id'];
                                             <i class="fa fa-camera"></i>
                                             Загрузить аватар
                                         </a>
-                                        <a href="fff.php?id=<?= $user['id']?>" class="dropdown-item" onclick="return confirm('are you sure?');">
+                                        <a href="delete.php?id=<?= $user['id']?>" class="dropdown-item" onclick="return confirm('are you sure?');">
                                             <i class="fa fa-window-close"></i>
                                             Удалить
                                         </a>
@@ -136,7 +136,7 @@ $id = $_SESSION['user']['id'];
                                             <i class="fa fa-camera"></i>
                                             Загрузить аватар
                                         </a>
-                                        <a href="fff.php?id=<?= $user['id']?>" class="dropdown-item" onclick="return confirm('are you sure?');">
+                                        <a href="delete.php?id=<?= $user['id']?>" class="dropdown-item" onclick="return confirm('are you sure?');">
                                             <i class="fa fa-window-close"></i>
                                             Удалить
                                         </a>
